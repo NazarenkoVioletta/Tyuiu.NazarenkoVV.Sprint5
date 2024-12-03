@@ -13,10 +13,10 @@ namespace Tyuiu.NazarenkoVV.Sprint5.Task0.V25.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string Path = $@"{Directory.GetCurrentDirectory()}/OutPutFileTask0.txt";
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
             double y = Math.Round((3 * Math.Pow(x, 4) + 1) / Math.Pow(x, 3), 3);
-            File.WriteAllText(Path, Convert.ToString(y));
-            return Path;
+            File.WriteAllText(path, y.ToString());
+            return path;
         }
     }
 }
