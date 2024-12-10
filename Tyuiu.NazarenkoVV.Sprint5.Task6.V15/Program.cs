@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.NazarenkoVV.Sprint5.Task5.V19.Lib;
+using Tyuiu.NazarenkoVV.Sprint5.Task6.V15.Lib;
 
-namespace Tyuiu.NazarenkoVV.Sprint5.Task5.V19
+namespace Tyuiu.NazarenkoVV.Sprint5.Task6.V15
 {
     internal class Program
     {
@@ -16,8 +16,8 @@ namespace Tyuiu.NazarenkoVV.Sprint5.Task5.V19
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Двумерные массивы. (ввод с клавиатуры)                            *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #19                                                             *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнил: Назаренко В. В.             | ИСПб-24-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -27,13 +27,12 @@ namespace Tyuiu.NazarenkoVV.Sprint5.Task5.V19
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = @"C:\DataSprint5\InPutDataFileTask6V13.txt";
-            Console.Write("Данные находяться в файле: " + path);
+            string path = @"C:\Users\Vivobook\source\repos\Tyuiu.NazarenkoVV.Sprint5\DataSprint5\InPutDataFileTask7V5.txt";
+            Console.WriteLine("Файл: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Сумма элеметов файла = " + res);
+            Console.WriteLine("В строке находится " + ds.LoadFromDataFile(path) + " удвоенных букв \"с\"");
             Console.ReadKey();
         }
     }
